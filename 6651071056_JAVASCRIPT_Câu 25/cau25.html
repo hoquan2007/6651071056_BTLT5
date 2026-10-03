@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><title>Câu 25 - Tính tiền món ăn</title>
+<style>table{border-collapse:collapse;width:650px}td,th{border:1px solid #000;padding:8px}</style>
+</head>
+<body>
+<h1>Tính tiền món ăn</h1>
+<h3>Thức ăn</h3>
+<label><input type="checkbox" name="item" value="Phở" data-price="50000"> Phở - 50.000đ</label><br>
+<label><input type="checkbox" name="item" value="Cơm" data-price="45000"> Cơm - 45.000đ</label><br>
+<label><input type="checkbox" name="item" value="Bún" data-price="40000"> Bún - 40.000đ</label>
+
+<h3>Nước uống</h3>
+<label><input type="checkbox" name="item" value="Coca Cola" data-price="15000"> Coca Cola - 15.000đ</label><br>
+<label><input type="checkbox" name="item" value="Pepsi" data-price="15000"> Pepsi - 15.000đ</label><br>
+<label><input type="checkbox" name="item" value="Nước suối" data-price="10000"> Nước suối - 10.000đ</label>
+
+<h3>Thời gian</h3>
+<label><input type="checkbox" id="night"> Dùng ban đêm (+10%)</label><br><br>
+<button type="button" onclick="calculateBill()">Tính tiền</button>
+<div id="result"></div>
+<script src="js/cau25.js"></script>
+</body>
+</html>
