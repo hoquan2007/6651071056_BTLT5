@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 30px;
+}
+
+.form-wrapper {
+    width: 560px;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    padding: 20px 28px;
+}
+
+h2 {
+    text-align: center;
+    color: #2f5d18;
+    margin-top: 0;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    align-items: center;
+    margin: 12px 0;
+    gap: 10px;
+}
+
+.form-row > label,
+.form-row > .label {
+    text-align: right;
+    color: #264d16;
+}
+
+.inline-control {
+    display: flex;
+    gap: 22px;
+}
+
+input[type="text"],
+select {
+    padding: 6px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#birthday {
+    min-width: 220px;
+}
+
+#errors {
+    color: #b00020;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+#errors ul {
+    margin-top: 6px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 14px;
+}
+
+.buttons button {
+    margin: 0 5px;
+    padding: 6px 14px;
+}

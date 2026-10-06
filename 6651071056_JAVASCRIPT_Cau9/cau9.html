@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation Exercise</title>
+    <link rel="stylesheet" href="Styles/cau9.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <h2>Personal Information</h2>
+
+        <form id="registerForm" novalidate>
+            <div class="form-row">
+                <label for="name">Enter name*:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-row">
+                <span class="label">Sex*:</span>
+                <div class="inline-control">
+                    <label><input type="radio" name="sex" value="Male"> Male</label>
+                    <label><input type="radio" name="sex" value="Female"> Female</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Enter email address*:</label>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <div class="form-row">
+                <label for="birthday">Enter birthday (MM/DD/YYYY)*:</label>
+                <input type="text" id="birthday" name="birthday" placeholder="mm/dd/yyyy hoặc mm-dd-yyyy">
+            </div>
+
+            <div class="form-row">
+                <label for="address">Enter street address (line 1)*:</label>
+                <input type="text" id="address" name="address">
+            </div>
+
+            <div class="form-row">
+                <label for="city">Enter city*:</label>
+                <input type="text" id="city" name="city">
+            </div>
+
+            <div class="form-row">
+                <label for="region">Select a region*:</label>
+                <select id="region" name="region">
+                    <option value="">-- Chọn --</option>
+                    <option value="North">North</option>
+                    <option value="Central">Central</option>
+                    <option value="South">South</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="zip">Enter 5-digit ZIP code*:</label>
+                <input type="text" id="zip" name="zip" maxlength="5">
+            </div>
+
+            <div id="errors" aria-live="polite"></div>
+
+            <div class="buttons">
+                <button type="submit">Finished</button>
+                <button type="button" id="clearBtn">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/cau9.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính DOM và jQuery</title>
+    <link rel="stylesheet" href="Styles/cau8.css">
+</head>
+<body>
+    <div class="calculator">
+        <input id="number1" type="number" value="12" step="any">
+
+        <button class="operator" type="button" data-op="+">+</button>
+        <button class="operator" type="button" data-op="-">-</button>
+        <button class="operator" type="button" data-op="*">×</button>
+        <button class="operator" type="button" data-op="/">/</button>
+        <button class="operator" type="button" data-op="^">^</button>
+
+        <input id="number2" type="number" value="14" step="any">
+
+        <span class="equal">=</span>
+
+        <input id="result" type="text" readonly>
+    </div>
+
+    <p id="message"></p>
+
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/cau8.js"></script>
+</body>
+</html>

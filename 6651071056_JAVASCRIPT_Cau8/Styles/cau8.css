@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.calculator {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.calculator input {
+    width: 78px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    font-size: 16px;
+}
+
+.operator {
+    width: 38px;
+    height: 32px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.operator.selected {
+    font-weight: bold;
+    outline: 2px solid #555;
+}
+
+.equal {
+    font-size: 22px;
+}
+
+#message {
+    color: #b00020;
+}
